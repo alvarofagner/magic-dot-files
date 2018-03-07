@@ -16,8 +16,8 @@ HISTCONTROL=ignoreboth:erasedups
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=10000
-HISTFILESIZE=20000
+HISTSIZE=100000
+HISTFILESIZE=200000
 
 HISTTIMEFORMAT="%h/%d - %H:%M:%S "
 
@@ -84,6 +84,12 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+POCKET_SP50="/home/sealsi/TEMS_Pocket/Sprint50"
+POCKET_SP51="/home/sealsi/TEMS_Pocket/Sprint51"
+
+#git-tfs
+export PATH=/home/sealsi/git/git-tfs/git-tf-2.0.3.20131219:$PATH
+
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -115,8 +121,8 @@ if [ -d "/usr/lib/icecc/bin" ] ; then
 fi
 
 # Debian env vars
-export DEBEMAIL=
-export DEBFULLNAME=
+export DEBEMAIL=alvaro.silva@ascom.com
+export DEBFULLNAME=Alvaro Silva
 export DEBSIGN_KEYID=
 
 # Quilt default configuration

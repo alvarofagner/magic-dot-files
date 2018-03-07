@@ -15,7 +15,7 @@
     let g:mdf_space_instead_of_tab = 1
     let g:mdf_tabsize = 4
     let g:mdf_listchars = 1
-
+    let g:session_autosave = 'no'
 
     set vb t_vb=                " disable the fcking beep
     "set visualbell             " visual bell instead of beeping
@@ -576,14 +576,14 @@
     " }
 
     " vim-airline {
-        let g:airline_powerline_fonts = 1
+    "    let g:airline_powerline_fonts = 1
 
-        let g:airline_theme = 'powerlineish'
-        if !exists('g:airline_powerline_fonts')
-            " Use the default set of separators with a few customizations
-            let g:airline_left_sep='›' " Slightly fancier than '>'
-            let g:airline_right_sep='‹' " Slightly fancier than '<'
-        endif
+    "    let g:airline_theme = 'powerlineish'
+    "    if !exists('g:airline_powerline_fonts')
+    "        " Use the default set of separators with a few customizations
+    "        let g:airline_left_sep='›' " Slightly fancier than '>'
+    "        let g:airline_right_sep='‹' " Slightly fancier than '<'
+    "    endif
     " }
 " }
 

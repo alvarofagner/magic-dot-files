@@ -1,6 +1,6 @@
 [user]
-    name =
-    email =
+    name = Alvaro Silva
+    email = alvaro.silva@infovista.com
 [color]
     ui = auto
     diff = auto
@@ -15,7 +15,17 @@
     log1 = log --pretty=oneline --abbrev-commit
     rlog = log --pretty=format:\"%h %Cblue%cr%Creset %cn %Cgreen%s%Creset\"
     tag1 = tag | sort -n -t . -k 1,1 -k 2,2 -k 3,3
+    last = log -1 HEAD
 [url "git://anongit.kde.org/"]
     insteadOf = kde:
 [url "ssh://git@git.kde.org/"]
     pushInsteadOf = kde:
+[merge]
+    tool = meld
+#$LOCAL is the file in the current branch (e.g. master).
+#$REMOTE is the file in the branch being merged (e.g. branch_name).
+#$MERGED is the partially merged file with the merge conflict information in it.
+#$BASE is the shared commit ancestor of $LOCAL and $REMOTE, this is to say the file as it was when the branch containing $REMOTE was originally created.
+[mergetool "meld"]
+    cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
+#    cmd = meld "$LOCAL" "$BASE" "$REMOTE" --output "$MERGED"
