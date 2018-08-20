@@ -55,11 +55,11 @@ ls $HOME/.fonts/Ubuntu*-Powerline*.ttf > /dev/null
 if [ $? -ne 0  ]; then
 
 	mkdir -p ~/tmp
-	wget -c http://font.ubuntu.com/download/ubuntu-font-family-0.80.zip -O ~/tmp/ubuntu-font-family-0.80.zip
+	wget -c https://assets.ubuntu.com/v1/fad7939b-ubuntu-font-family-0.83.zip -O ~/tmp/ubuntu-font-family-0.83.zip
 
-	unzip ~/tmp/ubuntu-font-family-0.80.zip -d ~/tmp
+	unzip ~/tmp/ubuntu-font-family-0.83.zip -d ~/tmp
 
-	pushd ~/tmp/ubuntu-font-family-0.80
+	pushd ~/tmp/ubuntu-font-family-0.83
 
 	chmod +x ~/.powerline-fontpatcher/scripts/powerline-fontpatcher
 
