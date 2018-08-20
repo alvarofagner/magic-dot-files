@@ -16,8 +16,8 @@ HISTCONTROL=ignoreboth:erasedups
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=100000
-HISTFILESIZE=200000
+HISTSIZE=1000000
+HISTFILESIZE=2000000
 
 HISTTIMEFORMAT="%h/%d - %H:%M:%S "
 
@@ -130,4 +130,4 @@ export QUILT_PATCHES=debian/patches
 export QUILT_REFRESH_ARGS="-p ab --no-timestamps --no-index"
 
 #Exclude some dirs from Grep results
-export GREP_OPTIONS="-I --exclude-dir=.svn --exclude-dir=.cache"
+alias grep="grep -I --exclude-dir=.svn --exclude-dir=.cache"
