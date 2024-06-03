@@ -87,8 +87,13 @@ alias l='ls -CF'
 POCKET_SP50="/home/sealsi/TEMS_Pocket/Sprint50"
 POCKET_SP51="/home/sealsi/TEMS_Pocket/Sprint51"
 
+QT_AUTO_SCREEN_SCALE_FACTOR=1
+
 #git-tfs
-export PATH=/home/sealsi/git/git-tfs/git-tf-2.0.3.20131219:$PATH
+export PATH=/home/asilva/Apps/android-studio/bin:/home/asilva/utils_scripts:/home/sealsi/git/git-tfs/git-tf-2.0.3.20131219:$PATH
+
+#Use android tools from /development
+export PATH=/development/android-sdk/platform-tools:$PATH
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert

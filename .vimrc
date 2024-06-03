@@ -20,6 +20,8 @@
     set vb t_vb=                " disable the fcking beep
     "set visualbell             " visual bell instead of beeping
 
+    set number
+
     " Skip initialization for vim-tiny or vim-small.
     if !1 | finish | endif
 
@@ -152,6 +154,8 @@
 
     set popt=left:8pc,right:3pc     " print options
 
+
+    let g:skipview_files = ['*\.vim', '*rc', '*\.txt', '*\.bib', '*COMMIT_EDITMSG', '.gitignore', '\*.f95', 'Makefile']
     if version >= 730
         if has("autocmd")
             " Autosave & Load Views.

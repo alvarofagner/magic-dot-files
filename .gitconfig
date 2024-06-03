@@ -3,9 +3,12 @@
     email = alvaro.silva@infovista.com
 [color]
     ui = auto
-    diff = auto
-    status = auto
+    #diff = auto
     branch = auto
+[color "status"]
+    changed = cyan bold
+    untracked = red bold
+    added = green bold
 [alias]
     br = branch
     st = status
@@ -13,6 +16,7 @@
     ci = commit
     grepn = grep -n
     log1 = log --pretty=oneline --abbrev-commit
+    log2 = log --graph
     rlog = log --pretty=format:\"%h %Cblue%cr%Creset %cn %Cgreen%s%Creset\"
     tag1 = tag | sort -n -t . -k 1,1 -k 2,2 -k 3,3
     last = log -1 HEAD
@@ -29,3 +33,27 @@
 [mergetool "meld"]
     cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
 #    cmd = meld "$LOCAL" "$BASE" "$REMOTE" --output "$MERGED"
+[core]
+	autocrlf = false
+	filemode = false
+[http]
+	cookiefile = /home/asilva/.gitcookies
+[color "diff"]
+	old = red bold
+    frag = yellow
+    func = yellow bold
+    meta = green bold
+[color "branch"]
+	remote = red bold
+
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

@@ -45,6 +45,8 @@ if [ -d "/opt/genymotion" ] ; then
     PATH="/opt/genymotion:$PATH"
 fi
 
+QT_DEVICE_PIXEL_RATIO=2
+
 if [ -d "$HOME/.powerline/scripts" ] ; then
     PATH="$HOME/.powerline/scripts:$PATH"
 fi

@@ -12,13 +12,8 @@ alias vless='vim -R '
 
 alias t='~/bin/todo.sh'
 
+# For a more wholesome experience :)
+alias please='sudo'
+
 #Pocket
-alias pocketrepo="cd /media/SEALSI/Data/git/Pocket/Pocket"
-alias feature1="cd /media/SEALSI/Data/git/Pocket/Feature1"
-alias feature3="cd /media/SEALSI/Data/git/Pocket/Feature3"
-alias feature4="cd /media/SEALSI/Data/git/Pocket/Feature4"
-alias feature5="cd /media/SEALSI/Data/git/Pocket/Feature5"
-alias feature6="cd /media/SEALSI/Data/git/Pocket/Feature6"
-alias feature7="cd /media/SEALSI/Data/git/Pocket/Feature7"
-alias csprint="cd /home/sealsi/TEMS_Pocket/Sprint58"
-alias usatrip="cd /home/sealsi/Vmware-shared-folder/USA_102006"
+alias pocketrepo="cd /home/asilva/git/Pocket"
